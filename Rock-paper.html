@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+</head>
+<body>
+  <p>Rock Paper Scissors</p>
+  <button onclick="
+  const Randoms = Math.random();
+  let Computer = '';
+  if (Randoms >=0 && Randoms<1/3){
+    Computer = 'Rock';
+    console.log(Computer);
+  }
+  else if (Randoms >=1/3 && Randoms < 2/3) {
+    Computer = 'Paper';
+    console.log(Computer);
+  }
+  else{
+    Computer = 'Scissors';
+    console.log(Computer);
+  }
+
+  let result = '';
+  if (Computer === 'Rock'){
+    result = 'tie';
+  }
+  else if (Computer === 'Paper'){
+    result = 'lost';
+  }
+  else {
+    result = 'win';
+  }
+
+  alert(`You picked Rock and Computer Pick ${Computer}, You ${result}`);
+  
+
+
+  ">Rock</button>
+
+  <button onclick="
+    const Randoms = Math.random();
+    let Computer = '';
+    if (Randoms >=0 && Randoms<1/3){
+      Computer = 'Rock';
+      console.log(Computer);
+    }
+    else if (Randoms >=1/3 && Randoms < 2/3) {
+      Computer = 'Paper';
+      console.log(Computer);
+    }
+    else{
+      Computer = 'Scissors';
+      console.log(Computer);
+    }
+
+    let result = '';
+    if (Computer === 'Paper'){
+      result = 'tie';
+    }
+    else if (Computer === 'Scissors'){
+      result = 'lost';
+    }
+    else {
+      result = 'win';
+    }
+
+    alert(`You picked Paper and Computer Pick ${Computer}, You ${result}`);
+  ">Paper</button>
+    <button onclick="
+    const Randoms = Math.random();
+    let Computer = '';
+    if (Randoms >=0 && Randoms<1/3){
+      Computer = 'Rock';
+      console.log(Computer);
+    }
+    else if (Randoms >=1/3 && Randoms < 2/3) {
+      Computer = 'Paper';
+      console.log(Computer);
+    }
+    else{
+      Computer = 'Scissors';
+      console.log(Computer);
+    }
+
+    let result = '';
+    if (Computer === 'Scissors'){
+      result = 'tie';
+    }
+    else if (Computer === 'Rock'){
+      result = 'lost';
+    }
+    else {
+      result = 'win';
+    }
+
+    alert(`You picked Scissors and Computer Pick ${Computer}, You ${result}`);
+  ">Scissors</button>
+</body>
+</html>

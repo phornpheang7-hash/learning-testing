@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rock Paper Scissors</title>
+  
+  
+</head>
+<body>
+  <p class="title">Rock Paper Scissors</p>
+  <button onclick="playGame('Rock');
+  
+  
+  ">Rock</button>
+
+  <button onclick="playGame('Paper');
+    
+    ">Paper</button>
+
+
+  <button onclick=" playGame('Scissors');
+    
+  ">Scissors</button>
+
+  <p class="js-result"></p>
+  <p class="js-move"></p>
+  <p class="js score"></p>
+
+  <button onclick="score.wins "></button>
+
+
+
+
+  <script>
+    function playGame(playerMove){
+      const Computer = pickbycomputer();
+      let result = '';
+      if (playerMove ==='Scissors'){ 
+        if (Computer === 'Scissors'){
+            result = 'tie';
+        }
+        else if (Computer === 'Rock'){
+            result = 'lost';
+        }
+        else {
+          result = 'win';
+        }
+
+      }else if (playerMove=='Paper'){
+        
+
+        
+        if (Computer === 'Paper'){
+          result = 'tie';
+        }
+        else if (Computer === 'Scissors'){
+          result = 'lost';
+        }
+        else {
+          result = 'win';
+        }
+
+  
+      }else if (playerMove==='Rock'){
+        
+        if (Computer === 'Rock'){
+          result = 'tie';
+        }
+        else if (Computer === 'Paper'){
+          result = 'lost';
+        }
+        else {
+          result = 'win';
+        }
+
+      }
+      alert(`You picked ${playerMove} and Computer Pick ${Computer}, You ${result}`);
+    }
+    function pickbycomputer(){
+      let Computer = '';
+      const Randoms = Math.random();
+      if (Randoms >=0 && Randoms<1/3){
+        Computer = 'Rock';
+        
+      }
+      else if (Randoms >=1/3 && Randoms < 2/3) {
+        Computer = 'Paper';
+        
+      }
+      else{
+        Computer = 'Scissors';
+        
+      }
+      return Computer
+    }
+
+  </script>
+</body>
+</html>
